@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* background-color: #C59B76; */
+  font-family: "Jost", sans-serif;
+  color: rgba(53, 45, 57, 0.8);
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #495F41 0%,
+    #495F41 33%,
+    #C59B76 33%,
+    #C59B76 100%
+  );
+}
+.container {
+  margin: 50px auto;
+  width: 700px;
+}
+.card {
+  margin: 20px auto;
+  padding: 32px;
+  background-color: #f1faee;
+  border: 3px solid #B1EDE8;
+  border-radius: 8px;
+  box-shadow: 6px 6px #2274A5;
+}
+h1, h2 {
+  font-family: "Lilita One", sans-serif;
+  color: #2274A5;
+  margin: 20px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 22px;
+  line-height: 22px;
+}
+#profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+p {
+  margin: 20px auto 34px;
+}
+a {
+  text-decoration: none;
+  color: #495F41;
+}
+a:hover {
+  color: #B1EDE8;
+}
+.button {
+  padding: 10px 12px;
+  color: #B1EDE8;
+  background-color: #495F41;
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: #B1EDE8;
+  color: #495F41;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 30px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 15px;
+  margin: 10px 0px 20px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  body {
+    background: linear-gradient(
+      to top,
+      #495F41 0%,
+      #495F41 23%,
+      #C59B76 23%,
+      #C59B76 100%
+    );
+  }
+}
